@@ -1,8 +1,8 @@
 # Google Data Analytics Case Study 1: Cyclistic
 
 ## Contents
-1. [Introduction](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/edit/main/README.md#introduction)
-2. [Company Background](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/edit/main/README.md#company-background)
+1. [Introduction](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#introduction)
+2. [Company Background](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#company-background)
 3. Ask
 4. Prepare
 5. Process
