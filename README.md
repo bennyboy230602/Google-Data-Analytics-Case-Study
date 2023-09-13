@@ -15,7 +15,7 @@
 To finish the Google Data Analytics course, I will be conducting an analysis of user data for the Chicago-based bike-sharing company Cyclistic. I will be following the course's advice on structuring a data-driven investigation - Ask, Prepare, Process, Analyse, Share and Act.
 
 ## Company Background  
-Information about the company is quoted below sourced from the case study pdf:
+Information about the company is sourced below from the case study pdf:
 >### Characters and teams
 >* Cyclistic: A bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself apart
 by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities
@@ -45,7 +45,14 @@ chosen Cyclistic for their mobility needs.
 >Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do
 that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual
 riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in
-analyzing the Cyclistic historical bike trip data to identify trends.  
+analyzing the Cyclistic historical bike trip data to identify trends.
+
+## Ask
+In this scenario, Moreno has provided the business task:  **How do annual members and casual riders use Cyclistic bikes differently?**  
+
+## Prepare
+
+
 
 
 
