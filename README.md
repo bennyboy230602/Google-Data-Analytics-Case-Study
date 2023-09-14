@@ -3,13 +3,13 @@
 ## Contents
 1. [Introduction](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#introduction)
 2. [Company Background](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#company-background)
-3. Ask
-4. Prepare
-5. Process
-6. Analyse
-7. Share
-8. Act
-9. Appendix
+3. [Ask](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#ask)
+4. [Prepare](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#prepare)
+5. [Process](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#process)
+6. [Analyse](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#analyse)
+7. [Share](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#share)
+8. [Act](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#act)
+9. [Appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix)
 
 ## Introduction
 To finish the Google Data Analytics course, I will be conducting an analysis of user data for the Chicago-based bike-sharing company Cyclistic. I will be following the course's advice on structuring a data-driven investigation - Ask, Prepare, Process, Analyse, Share and Act.
