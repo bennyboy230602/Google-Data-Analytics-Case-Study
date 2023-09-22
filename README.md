@@ -51,20 +51,20 @@ analyzing the Cyclistic historical bike trip data to identify trends.
 In this scenario, Moreno has provided the business task:  **How do annual members and casual riders use Cyclistic bikes differently?**  
 
 ## Prepare
-###Data Source
+### Data Source  
 Cyclistic has provided historical data via this [link](https://divvy-tripdata.s3.amazonaws.com/index.html) which has been made available by Motivate International Inc. under this
 [license](https://divvybikes.com/data-license-agreement). I will use the most recent 12 months of data available from August 2022 to July 2023 for analysis to ensure the data is current.  
 While the data is public, data privacy dictates that the riders' personally identifiable information will not be available. This means I will not be able to connect pass purchases with credit card numbers to determine whether casual members live in the Cyclistic service area or if they have purchased multiple single passes before.
 
-###Organisation
+### Organisation  
 To easily process the large amount of data, the CSV files will be uploaded to a BigQuery dataset to be queried using SQL. The naming scheme will be changed to be clearer - for example, July 2023 will be stored as "divvy_tripdata_2023_07" rather than the original "202307-divvy-tripdata."
 
 ## Process
 
-###Combining the Data
+### Combining the Data  
 After checking whether the automatically generated schema for each table was consistent, I found that some of the tables interpreted the attributes "started_at" and "ended_at" as STRING while others were TIMESTAMP. In order to combine the tables, I first converted the incorrect datatypes to TIMESTAMP for consistency then used a UNION query to combine the tables into a new table in the database called "divvy_tripdata_combined" (see [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix) for code). The UNION function was used rather than INNER JOIN so that observations would be added to existing attributes rather than adding new ones. From the new table's metadata, it can be seen there are 5,939,550 rows.  
 
-### Cleaning the Data
+### Cleaning the Data  
 
 
 
