@@ -61,11 +61,13 @@ To easily process the large amount of data, the CSV files will be uploaded to a 
 
 ## Process
 ###Combining the Data
-After checking whether the automatically generated schema for each table was consistent, I found that some of the tables interpreted the attributes "started_at" and "ended_at" as STRING while others were TIMESTAMP. In order to combine the tables, I first converted the incorrect datatypes to TIMESTAMP for consistency then used a UNION query to combine the tables into a new table in the database called "divvy_tripdata_combined" (see appendix for code). The UNION function was used rather than INNER JOIN so that observations would be added to existing attributes rather than adding new ones. From the new table's metadata, it can be seen there are 5,939,550 rows.
+After checking whether the automatically generated schema for each table was consistent, I found that some of the tables interpreted the attributes "started_at" and "ended_at" as STRING while others were TIMESTAMP. In order to combine the tables, I first converted the incorrect datatypes to TIMESTAMP for consistency then used a UNION query to combine the tables into a new table in the database called "divvy_tripdata_combined" (see [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix) for code). The UNION function was used rather than INNER JOIN so that observations would be added to existing attributes rather than adding new ones. From the new table's metadata, it can be seen there are 5,939,550 rows.  
+### Cleaning the Data
+
 
 
 ## Appendix
-[Combining the Data SQL Code]()
+[Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
 
 
 
