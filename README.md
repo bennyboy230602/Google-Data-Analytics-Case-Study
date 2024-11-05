@@ -79,15 +79,20 @@ After checking whether the automatically generated schema for each table was con
 
 ### Cleaning the Data  
 The actions taken to clean the data are summarised below. The full SQL query can be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
-* Unnecessary columns were dropped, including all data containing station IDs or coordinates. This data is not relevant to the analysis to be performed.
-* Check for duplicate ride IDs. 61 duplicates occurred and were removed.
-* 
-* 
+* Unnecessary columns, including all data containing station IDs or coordinates, were dropped. This data is not relevant to the analysis to be performed.
+* Check for duplicate ride IDs. 116 duplicates occurred and were removed.
+* Check that there are only three distinct values for rideable_type. This was true.
+* Check that there are only two distinct values for member_casual. This was true.
+* Remove rows where the start or end station name is null. There were 849,951 null values for start_station_name and a further 499,194 for end_station_name.
+* Adding columns relevant to the data analysis. These included:
+  - ride_length - Duration of the ride based on start_time and end_time [FLOAT]
+  - day_of_week - The weekday the ride occurred [STRING]
+  - month_of_year - The month of the year [STRING]
 
 
 ## Appendix
-[Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
-[Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
+>[Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
+>[Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
 
 
 
