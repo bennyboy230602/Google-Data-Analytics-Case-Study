@@ -86,8 +86,14 @@ The actions taken to clean the data are summarised below. The full SQL query can
 * Remove rows where the start or end station name is null. There were 849,951 null values for start_station_name and a further 499,194 for end_station_name.
 * Adding columns relevant to the data analysis. These included:
   - ride_length - Duration of the ride based on start_time and end_time [FLOAT]
+  - time-of-day - Hour at which the ride began [FLOAT]
   - day_of_week - The weekday the ride occurred [STRING]
   - month_of_year - The month of the year [STRING]
+* Once these columns were added, I removed rows where ride_length was less than one minute, including erroneous negative ride lengths and times too short to be a legitimate ride. This last case could be where a person re-docked a bike to ensure it was secure or false starts. This equated to 49,428 rows.
+
+Once these procedures had been performed, the final size of the dataset was 4,010,644 rows meaning 1398725 rows were deleted.
+
+## Analyse
 
 
 ## Appendix
