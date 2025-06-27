@@ -55,15 +55,15 @@ The business task is as follows: "Design marketing strategies to convert casual 
 
 ## Prepare  
 ### Data Source  
-Cyclistic has provided historical data via this [link](https://divvy-tripdata.s3.amazonaws.com/index.html) which has been made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement). I will analyse the most recent 12 months of data from September 2022 to August 2023 to ensure the data is relevant.  
-While the data is public, data privacy dictates that the riders' personally identifiable information will not be available. This means I will not be able to connect pass purchases with credit card numbers to determine whether casual members live in the Cyclistic service area or if they have purchased multiple single passes before. To easily process the large amount of data, the CSV files will be uploaded to a BigQuery dataset to be queried using SQL. 
+Cyclistic has provided historical data via this [link](https://divvy-tripdata.s3.amazonaws.com/index.html), which has been made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement). I will analyse the most recent 12 months of data from September 2022 to August 2023 to ensure the data is relevant.  
+While the data is public, data privacy dictates that the riders' personally identifiable information will not be available. This means I will not be able to connect past purchases with credit card numbers to determine whether casual members live in the Cyclistic service area or if they have purchased multiple single passes before. To easily process the large amount of data, the CSV files will be uploaded to a BigQuery dataset to be queried using SQL. 
   
 ## Process  
 ### Combining the Data  
-After checking whether the automatically generated schema for each table was consistent, I found that some of the tables interpreted the attributes "started_at" and "ended_at" as STRING while others were TIMESTAMP. To combine the tables, I first converted the incorrect datatypes to TIMESTAMP for consistency then used a UNION query to combine the tables into a new table in the database called "divvy_tripdata_combined" (see [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix) for code). The UNION function was used rather than INNER JOIN so that observations would be added to existing attributes rather than adding new ones. From the new table's metadata, it can be seen that there are 
-5,409,369 rows and 13 columns consisting of the following fields:
+After checking whether the automatically generated schema for each table was consistent, I found that some of the tables interpreted the attributes "started_at" and "ended_at" as STRING while others were TIMESTAMP. To combine the tables, I first converted the incorrect datatypes to TIMESTAMP for consistency, then used a UNION query to combine the tables into a new table in the database called "divvy_tripdata_combined" (see [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix) for code). The UNION function was used rather than INNER JOIN so that observations would be added to existing attributes rather than adding new ones. From the new table's metadata, it can be seen that there are 
+5,723,606 rows and 13 columns consisting of the following fields:
 
-* **ride_id** - Unique ID associated with a ride [STRING]
+>* **ride_id** - Unique ID associated with a ride [STRING]
 * **rideable_type** - Type of bike (classic, electrical, or docked) [STRING]
 * **started_at** - Date and time that the ride began [TIMESTAMP]
 * **ended_at** - Date and time that the ride ended [TIMESTAMP]
@@ -77,26 +77,31 @@ After checking whether the automatically generated schema for each table was con
 * **end_lat** - Latitude of the ending station [FLOAT]
 * **member_casual** - Type of membership held by the ride (member or casual) [STRING]
 
-### Cleaning the Data  
-The actions taken to clean the data are summarised below. The full SQL query can be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
+### Exploring and Cleaning the Data  
+Exploratory data analysis was performed to inform what cleaning steps were necessary. A summary of both steps is listed below, and the full SQL queries can be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
 * Unnecessary columns (station IDs) were dropped. This data is not relevant to the analysis to be performed.
-* Check for duplicate ride IDs. There were 0 duplicates
+* Check for duplicate ride IDs. There were zero duplicates
 * Check that there are only three distinct values for rideable_type. This was true.
 * Check that there are only two distinct values for member_casual. This was true.
 * Remove rows containing null values:
-  - start_station_name, start_station_id - 868,772 null values removed
-  - end_station_name, end_station_id - 925,008 null values removed
-  - end_lat, end_lng - 6102 null values removed
+  - **start_station_name**, **start_station_id** - 868,772 null values removed
+  - **end_station_name**, **end_station_id** - 925,008 null values removed
+  - **end_lat**, **end_lng** - 6102 null values removed
 * Adding columns relevant to the data analysis. These included:
   - **ride_length** - Duration (in minutes) of the ride based on start_time and end_time [FLOAT]
   - **time-of-day** - Hour at which the ride began [FLOAT]
   - **day_of_week** - The weekday that the ride occurred [STRING]
   - **month_of_year** - The month of the year that the ride occurred [STRING]
-* Once these columns were added, I removed rows where ride_length was less than one minute, including erroneous negative ride lengths and times too short to be a legitimate ride. This last case could be where a person re-docked a bike to ensure it was secure or false starts. This equated to 269,929 rows.
+* Once these columns were added, I removed rows where ride_length was less than one minute, including erroneous negative ride lengths and times too short to be a legitimate ride. This last case could be where a person re-docked a bike to ensure it was secure, or where there were false starts. This equated to 269,929 rows.
 
-Once these procedures had been performed, the final size of the dataset was 4,175,831 rows meaning 1,547,775 rows were deleted.
+Once these procedures had been performed, the final size of the dataset was 4,175,831 rows, meaning 1,547,775 rows were deleted.
 
 ## Analyse
+With the data processed and cleaned, the data is now ready for analysis. The SQL query associated with the data analysis can once again be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
+>In answering how casual and annual member behaviour differs, I first looked at the types of bikes they used (see Figure 1).
+
+> ![image](https://github.com/user-attachments/assets/06923cbe-45aa-4b41-9ce8-884a8e342127)
+> **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). Pie chart showing the overall ratio between casual and annual members (right).
 
 
 ## Appendix
