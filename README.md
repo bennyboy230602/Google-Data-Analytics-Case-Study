@@ -98,10 +98,11 @@ Once these procedures had been performed, the final size of the dataset was 4,17
 
 ## Analyse
 With the data processed and cleaned, the data is now ready for analysis. The SQL query associated with the data analysis can once again be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
->In answering how casual and annual member behaviour differs, I first looked at the types of bikes they used (see Figure 1).
+
+In answering how casual and annual member behaviour differs, I first looked at the types of bikes they used (see Figure 1). 
 
 > ![image](https://github.com/user-attachments/assets/06923cbe-45aa-4b41-9ce8-884a8e342127)
-> **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). Pie chart showing the overall ratio between casual and annual members (right).
+> **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). The percentages represent the percentage of total rides that the slice constitutes. Pie chart showing the overall ratio between casual and annual members (right).
 
 
 ## Appendix
