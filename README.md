@@ -98,10 +98,10 @@ Once these procedures had been performed, the final size of the dataset was 4,17
 
 ## Appendix
 ### SQL Queries
->[Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
->[Exploring the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/exploring_data.sql)
->[Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
->[Analysing the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/analysing_data.sql)
+1. [Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
+2. [Exploring the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/exploring_data.sql)
+3. [Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
+4. [Analysing the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/analysing_data.sql)
 
 ### Data Source
 >[Divvy Data Bucket](https://divvy-tripdata.s3.amazonaws.com/index.html)
