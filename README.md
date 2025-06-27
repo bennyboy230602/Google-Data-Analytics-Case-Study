@@ -79,26 +79,35 @@ After checking whether the automatically generated schema for each table was con
 
 ### Cleaning the Data  
 The actions taken to clean the data are summarised below. The full SQL query can be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
-* Unnecessary columns, including all data containing station IDs or coordinates, were dropped. This data is not relevant to the analysis to be performed.
-* Check for duplicate ride IDs. 116 duplicates occurred and were removed.
+* Unnecessary columns (station IDs) were dropped. This data is not relevant to the analysis to be performed.
+* Check for duplicate ride IDs. There were 0 duplicates
 * Check that there are only three distinct values for rideable_type. This was true.
 * Check that there are only two distinct values for member_casual. This was true.
-* Remove rows where the start or end station name is null. There were 849,951 null values for start_station_name and a further 499,194 for end_station_name.
+* Remove rows where the start or end station name is null. There were 868,772 null values for start_station_name and 925,008 for end_station_name.
 * Adding columns relevant to the data analysis. These included:
-  - ride_length - Duration of the ride based on start_time and end_time [FLOAT]
+  - ride_length - Duration (in minutes) of the ride based on start_time and end_time [FLOAT]
   - time-of-day - Hour at which the ride began [FLOAT]
-  - day_of_week - The weekday the ride occurred [STRING]
-  - month_of_year - The month of the year [STRING]
-* Once these columns were added, I removed rows where ride_length was less than one minute, including erroneous negative ride lengths and times too short to be a legitimate ride. This last case could be where a person re-docked a bike to ensure it was secure or false starts. This equated to 49,428 rows.
+  - day_of_week - The weekday that the ride occurred [STRING]
+  - month_of_year - The month of the year that the ride occurred [STRING]
+* Once these columns were added, I removed rows where ride_length was less than one minute, including erroneous negative ride lengths and times too short to be a legitimate ride. This last case could be where a person re-docked a bike to ensure it was secure or false starts. This equated to 269,929 rows.
 
-Once these procedures had been performed, the final size of the dataset was 4,010,644 rows meaning 1398725 rows were deleted.
+Once these procedures had been performed, the final size of the dataset was 4,175,831 rows meaning 1,547,775 rows were deleted.
 
 ## Analyse
 
 
 ## Appendix
+### SQL Queries
 >[Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
+>[Exploring the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/exploring_data.sql)
 >[Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
+>[Analysing the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/analysing_data.sql)
+
+### Data Source
+>[Divvy Data Bucket](https://divvy-tripdata.s3.amazonaws.com/index.html)
+
+### Tableau Dashboards
+>[Tableau Public Workbook](https://public.tableau.com/app/profile/ben.holmes8701/viz/CyclisticVisualisation_17510351145090/NumberofRides)
 
 
 
