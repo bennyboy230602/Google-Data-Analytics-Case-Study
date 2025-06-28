@@ -121,16 +121,24 @@ b. ![image](https://github.com/user-attachments/assets/f332fb53-69a5-4ef5-adf9-7
 c. ![image](https://github.com/user-attachments/assets/52ddf72b-5024-41a0-9c4f-002164c30d49)
 > **Figure 2**: Line graphs showing number of rides taken at per (a) month, (b) day of the week, and (c) hour of the day.
 
-Another important difference between the two groups is how long their journeys are.
-* Casual riders ride longer than members consistently, with a small increase on weekends.
-* Members average a stable journey length of around 13 minutes, while casual users vary between 19-26 minutes
-* 
+##
+Another important difference between the two groups is how long their journeys are. Figure 3 shows that journeys made by casual riders are almost twice as long than Cyclistic members.
+
+![image](https://github.com/user-attachments/assets/18e8d6e8-cdaa-495b-85bd-570c0e280bbc)
+**Figure 3**: Bar chart showing the average journey time for the two groups.
+
+
+Breaking this down over different periods, Figure 4 illustrates the varying user patterns between the two groups.
+* Casual riders ride longer than members consistently over both the year and the week, with a small increase during the summer and on weekends.
+* Members average a stable journey length of around 10-14 minutes, demonstrating a more practical usage of the bikes.
+* Casual users' journey durations vary between 14-26 minutes depending on the hour of day, day of week, and month.
+* Casual riders have the longest journeys in the middle of the standard working day, indicating recreational use.
 
 
 a. ![image](https://github.com/user-attachments/assets/9ad24798-bbf3-4868-af03-23680a88c4a3)
 b. ![image](https://github.com/user-attachments/assets/17d07b69-7777-484c-9ad1-9cf371f164a2)
 c. ![image](https://github.com/user-attachments/assets/45d175a2-d59e-4144-88da-f905375b13ff)
-> **Figure 3**:
+> **Figure 4**: Line graphs showing the duration of rides taken per (a) month, (b) day of the week, and (c) hour of the day.
 
 
 
