@@ -111,14 +111,25 @@ In answering how casual and annual member behaviour differs, I first looked at t
 Next, I looked at how the number of rides differed between the two groups per month, per day of the week, and per hour of the day (see Figure 2).
 * Both types of members follow the same trend of usage over the year, with more rides taken during warmer, summer months.
 * There is an unexplained uptick in rides in April.
-* Members ride noticeably more mid-week while casual riders ride more on the weekend.
+* Members ride noticeably more mid-week before dropping off sharply, while casual riders ride more on the weekend.
 * Distinct peaks in member rides corresponding to commuting times for a standard 9-5 working day.
 * Casual riders mostly prefer afternoon rides, peaking around 5pm.
 
 a. ![image](https://github.com/user-attachments/assets/240a4a97-d1c8-435b-ba08-5f51292b66cf)
 b. ![image](https://github.com/user-attachments/assets/f332fb53-69a5-4ef5-adf9-7a8ec9ed4dce)
 c. ![image](https://github.com/user-attachments/assets/52ddf72b-5024-41a0-9c4f-002164c30d49)
-> **Figure 2**: 
+> **Figure 2**: Line graphs showing number of rides taken at per (a) month, (b) day of the week, and (c) hour of the day.
+
+Another important difference between the two groups is how long their journeys are.
+* Casual riders ride longer than members consistently, with a small increase on weekends.
+* Members average a stable journey length of around 13 minutes, while casual users vary between 19-26 minutes
+* 
+
+
+a. ![image](https://github.com/user-attachments/assets/9ad24798-bbf3-4868-af03-23680a88c4a3)
+b. ![image](https://github.com/user-attachments/assets/17d07b69-7777-484c-9ad1-9cf371f164a2)
+c. ![image](https://github.com/user-attachments/assets/45d175a2-d59e-4144-88da-f905375b13ff)
+> **Figure 3**:
 
 
 
