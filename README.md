@@ -108,6 +108,7 @@ In answering how casual and annual member behaviour differs, I first looked at t
 ![image](https://github.com/user-attachments/assets/06923cbe-45aa-4b41-9ce8-884a8e342127)
 > **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). The percentages represent the percentage of total rides across all categories that the slice constitutes. Pie chart showing the overall ratio between casual and annual members (right).
 
+##
 Next, I looked at how the number of rides differed between the two groups per month, per day of the week, and per hour of the day (see Figure 2).
 * Both types of members follow the same trend of usage over the year, with more rides taken during warmer, summer months.
 * There is an unexplained uptick in rides in April.
