@@ -63,7 +63,7 @@ While the data is public, data privacy dictates that the riders' personally iden
 After checking whether the automatically generated schema for each table was consistent, I found that some of the tables interpreted the attributes "started_at" and "ended_at" as STRING while others were TIMESTAMP. To combine the tables, I first converted the incorrect datatypes to TIMESTAMP for consistency, then used a UNION query to combine the tables into a new table in the database called "divvy_tripdata_combined" (see [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix) for code). The UNION function was used rather than INNER JOIN so that observations would be added to existing attributes rather than adding new ones. From the new table's metadata, it can be seen that there are 
 5,723,606 rows and 13 columns consisting of the following fields:
 
->* **ride_id** - Unique ID associated with a ride [STRING]
+* **ride_id** - Unique ID associated with a ride [STRING]
 * **rideable_type** - Type of bike (classic, electrical, or docked) [STRING]
 * **started_at** - Date and time that the ride began [TIMESTAMP]
 * **ended_at** - Date and time that the ride ended [TIMESTAMP]
@@ -100,9 +100,27 @@ Once these procedures had been performed, the final size of the dataset was 4,17
 With the data processed and cleaned, the data is now ready for analysis. The SQL query associated with the data analysis can once again be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
 
 In answering how casual and annual member behaviour differs, I first looked at the types of bikes they used (see Figure 1). 
+* Casual users constitute 37.43% of all users whilst Cyclistic members make up the other 62.57%.
+* Classic bikes are the most popular type of bike used, with Cyclistic members using them more relative to their overall demographic size.
+* Electric bikes are much less popular amongst Cyclistic members but are used similarly by casual users/
+* Docked bikes are the least popular by far and are only used by casual users
 
-> ![image](https://github.com/user-attachments/assets/06923cbe-45aa-4b41-9ce8-884a8e342127)
-> **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). The percentages represent the percentage of total rides that the slice constitutes. Pie chart showing the overall ratio between casual and annual members (right).
+![image](https://github.com/user-attachments/assets/06923cbe-45aa-4b41-9ce8-884a8e342127)
+> **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). The percentages represent the percentage of total rides across all categories that the slice constitutes. Pie chart showing the overall ratio between casual and annual members (right).
+
+Next, I looked at how the number of rides differed between the two groups per month, per day of the week, and per hour of the day (see Figure 2).
+* Both types of members follow the same trend of usage over the year, with more rides taken during warmer, summer months.
+* There is an unexplained uptick in rides in April.
+* Members ride noticeably more mid-week while casual riders ride more on the weekend.
+* Distinct peaks in member rides corresponding to commuting times for a standard 9-5 working day.
+* Casual riders mostly prefer afternoon rides, peaking around 5pm.
+
+a. ![image](https://github.com/user-attachments/assets/240a4a97-d1c8-435b-ba08-5f51292b66cf)
+b. ![image](https://github.com/user-attachments/assets/f332fb53-69a5-4ef5-adf9-7a8ec9ed4dce)
+c. ![image](https://github.com/user-attachments/assets/52ddf72b-5024-41a0-9c4f-002164c30d49)
+> **Figure 2**: 
+
+
 
 
 ## Appendix
