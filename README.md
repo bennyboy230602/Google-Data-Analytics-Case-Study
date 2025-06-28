@@ -99,6 +99,7 @@ Once these procedures had been performed, the final size of the dataset was 4,17
 ## Analyse
 With the data processed and cleaned, the data is now ready for analysis. The SQL query associated with the data analysis can once again be found in the [appendix](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/README.md#appendix).
 
+### Bike Types
 In answering how casual and annual member behaviour differs, I first looked at the types of bikes they used (see Figure 1). 
 * Casual users constitute 37.43% of all users whilst Cyclistic members make up the other 62.57%.
 * Classic bikes are the most popular type of bike used, with Cyclistic members using them more relative to their overall demographic size.
@@ -108,7 +109,7 @@ In answering how casual and annual member behaviour differs, I first looked at t
 ![image](https://github.com/user-attachments/assets/06923cbe-45aa-4b41-9ce8-884a8e342127)
 > **Figure 1**: Pie charts illustrating types of bikes used for each membership type (left). The percentages represent the percentage of total rides across all categories that the slice constitutes. Pie chart showing the overall ratio between casual and annual members (right).
 
-##
+### Number of Rides
 Next, I looked at how the number of rides differed between the two groups per month, per day of the week, and per hour of the day (see Figure 2).
 * Both types of members follow the same trend of usage over the year, with more rides taken during warmer, summer months.
 * There is an unexplained uptick in rides in April.
@@ -121,7 +122,7 @@ b. ![image](https://github.com/user-attachments/assets/f332fb53-69a5-4ef5-adf9-7
 c. ![image](https://github.com/user-attachments/assets/52ddf72b-5024-41a0-9c4f-002164c30d49)
 > **Figure 2**: Line graphs showing number of rides taken at per (a) month, (b) day of the week, and (c) hour of the day.
 
-##
+### Duration of Rides
 Another important difference between the two groups is how long their journeys are. Figure 3 shows that journeys made by casual riders are almost twice as long than Cyclistic members.
 
 ![image](https://github.com/user-attachments/assets/18e8d6e8-cdaa-495b-85bd-570c0e280bbc)
@@ -141,6 +142,9 @@ c. ![image](https://github.com/user-attachments/assets/45d175a2-d59e-4144-88da-f
 > **Figure 4**: Line graphs showing the duration of rides taken per (a) month, (b) day of the week, and (c) hour of the day.
 
 
+### Station Usage
+
+![image](https://github.com/user-attachments/assets/76361b4d-f1d4-4615-b47d-9c149c3702a7)
 
 
 ## Appendix
