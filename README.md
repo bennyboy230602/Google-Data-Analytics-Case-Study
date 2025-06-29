@@ -143,8 +143,16 @@ c. ![image](https://github.com/user-attachments/assets/45d175a2-d59e-4144-88da-f
 
 
 ### Station Usage
+Finally, I looked at which stations were used the most by each user group.
+
+![image](https://github.com/user-attachments/assets/fc4124b6-ca6e-4b25-8e26-524d6f40d839)
 
 ![image](https://github.com/user-attachments/assets/76361b4d-f1d4-4615-b47d-9c149c3702a7)
+
+![image](https://github.com/user-attachments/assets/e9d1528b-998d-4dee-8711-bf4008515382)
+
+![image](https://github.com/user-attachments/assets/45807fbd-8b9d-4fa1-a576-a4bdff7d9051)
+
 
 
 ## Appendix
