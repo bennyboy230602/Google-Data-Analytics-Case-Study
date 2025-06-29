@@ -111,7 +111,7 @@ In answering how casual and annual member behaviour differs, I first looked at t
 
 ### Number of Rides
 Next, I looked at how the number of rides differed between the two groups per month, per day of the week, and per hour of the day (see Figure 2).
-* Both types of members follow the same trend of usage over the year, with more rides taken during warmer, summer months.
+* Both types of members follow the same trend of usage over the year, with more rides taken during warmer, Summer months.
 * There is an unexplained uptick in rides in April.
 * Members ride noticeably more mid-week before dropping off sharply, while casual riders ride more on the weekend.
 * Distinct peaks in member rides corresponding to commuting times for a standard 9-5 working day.
@@ -126,13 +126,14 @@ c. ![image](https://github.com/user-attachments/assets/52ddf72b-5024-41a0-9c4f-0
 Another important difference between the two groups is how long their journeys are. Figure 3 shows that journeys made by casual riders are almost twice as long than Cyclistic members.
 
 ![image](https://github.com/user-attachments/assets/18e8d6e8-cdaa-495b-85bd-570c0e280bbc)
-**Figure 3**: Bar chart showing the average journey time for the two groups.
+> **Figure 3**: Bar chart showing the average journey time for the two groups.
 
 
 Breaking this down over different periods, Figure 4 illustrates the varying user patterns between the two groups.
-* Casual riders ride longer than members consistently over both the year and the week, with a small increase during the summer and on weekends.
+* Casual riders ride longer than members consistently over both the year and the week, with a small increase during the Summer and on weekends.
 * Members average a stable journey length of around 10-14 minutes, demonstrating a more practical usage of the bikes.
 * Casual users' journey durations vary between 14-26 minutes depending on the hour of day, day of week, and month.
+* Casual riders have ride durations almost twice that of Cyclistic members (23 minutes compared to 12 minutes).
 * Casual riders have the longest journeys in the middle of the standard working day, indicating recreational use.
 
 
@@ -143,30 +144,52 @@ c. ![image](https://github.com/user-attachments/assets/45d175a2-d59e-4144-88da-f
 
 
 ### Station Usage
-Finally, I looked at which stations were used the most by each user group.
+Finally, I examined which stations were used most frequently by each user group.
+* The top 10 start and end stations are the same (see Figures 5 and 7).
+* Filtering out stations with less than 10,000 rides per year, casual members consistently use a small pool of stations (Figure 6).
+* On the contrary, Cyclistic members use more stations spanning a larger area (Figure 8).
 
 ![image](https://github.com/user-attachments/assets/fc4124b6-ca6e-4b25-8e26-524d6f40d839)
-
+> **Figure 5**: Bar chart showing the top 10 starting stations.
 ![image](https://github.com/user-attachments/assets/76361b4d-f1d4-4615-b47d-9c149c3702a7)
-
+> **Figure 6**: Map showing Chicago, with starting stations represented by circles whose size and colour indicate the amount of usage. The stations have been filtered to only include those with above 10,000 rides per year for clarity.
 ![image](https://github.com/user-attachments/assets/e9d1528b-998d-4dee-8711-bf4008515382)
-
+> **Figure 7**: Bar chart showing the top 10 ending stations.
 ![image](https://github.com/user-attachments/assets/45807fbd-8b9d-4fa1-a576-a4bdff7d9051)
+> **Figure 8**: Map showing Chicago, with ending stations represented by circles whose size and colour indicate the amount of usage. The stations have been filtered to only include those with above 10,000 rides per year for clarity.
 
+### Conclusions
+A table summarising the differences between the two groups is presented below:
+
+| Cyclistic Members | Casual Users |
+| --- | --- |
+| Prefer riding classic bikes on weekdays for commuting to work | Prefer using electric bikes on weekends in the evening |
+| Ride durations are consistent across all timescales, averaging between 10-14 minutes | Ride durations vary between 14-26 minutes on average depending on the time of year, day of the week, and time of day |
+| Take more rides but last half as long | Take less rides but for longer |
+| Use a wider variety of stations throughout the whole city | Mostly use a few very popular stations closer to the coast |
+
+There are, however, limitations with the data that could reveal additional insights. One is that there is not enough time-based context (tourist data, large events) that may explain some of the annual usage features. Another is that there is not enough geographical data (tourist attractions, population density) to better illustrate what different users are using the service for.
+
+## Act
+Based on the different usage patterns, these are the recommendations for converting casual users into Cyclistic members:
+*  Offer exclusive discounts or experiences for annual members (rewards system, guided tours, challenges, community events).
+*  Seasonal campaigns – use social media to advertise seasonal attractions in different parts of the city.
+*  Family/group annual memberships at a reduced cost.
+*  Offer limited-time trials of the annual membership on weekends or during busy seasons.
 
 
 ## Appendix
 ### SQL Queries
-1. [Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
-2. [Exploring the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/exploring_data.sql)
-3. [Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
-4. [Analysing the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/analysing_data.sql)
+> 1. [Combining the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/combining_data.sql)
+> 2. [Exploring the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/exploring_data.sql)
+> 3. [Cleaning the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/cleaning_data.sql)
+> 4. [Analysing the Data SQL Query](https://github.com/bennyboy230602/Google-Data-Analytics-Case-Study/blob/main/analysing_data.sql)
 
 ### Data Source
->[Divvy Data Bucket](https://divvy-tripdata.s3.amazonaws.com/index.html)
+> [Divvy Data Bucket](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 ### Tableau Dashboards
->[Tableau Public Workbook](https://public.tableau.com/app/profile/ben.holmes8701/viz/CyclisticVisualisation_17510351145090/NumberofRides)
+> [Tableau Public Workbook](https://public.tableau.com/app/profile/ben.holmes8701/viz/CyclisticVisualisation_17510351145090/NumberofRides)
 
 
 
